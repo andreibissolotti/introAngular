@@ -1,5 +1,5 @@
-<p>Jogador atual: {{currentPlayer}}</p>
-<p>Vencedor: {{winner}}</p>
+<p *ngIf="!winner">Jogador atual: {{currentPlayer}}</p>
+<p *ngIf="winner">Vencedor: {{winner}}</p>
 <table>
     <tr *ngFor="let i of [0,1,2]">
         <td *ngFor="let j of [0,1,2]" (click)="processPlay(i, j)">{{board[i][j]}}</td>
