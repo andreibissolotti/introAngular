@@ -12,3 +12,7 @@ app-tic-tac-toe td {
     text-align: center;
     vertical-align: middle;
 }
+
+app-tic-tac-toe td:empty:hover {
+    background-color: gray;
+}

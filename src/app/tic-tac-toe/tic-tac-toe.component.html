@@ -1,8 +1,20 @@
-<p>Jogafor atual: O</p>
-<p>Vencedor: </p>
+<p>Jogafor atual: {{currentPlayer}}</p>
+<p>Vencedor: {{winner}}</p>
 <table>
-    <tr><td>O</td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td></tr>
-    <tr><td></td><td>X</td><td></td></tr>
+    <tr>
+        <td (click)="processPlay(0, 0)">{{bord[0][0]}}</td>
+        <td (click)="processPlay(0, 1)">{{bord[0][1]}}</td>
+        <td (click)="processPlay(0, 2)">{{bord[0][2]}}</td>
+    </tr>
+    <tr>
+        <td (click)="processPlay(1, 0)">{{bord[1][0]}}</td>
+        <td (click)="processPlay(1, 1)">{{bord[1][1]}}</td>
+        <td (click)="processPlay(1, 2)">{{bord[1][2]}}</td>
+    </tr>
+    <tr>
+        <td (click)="processPlay(2, 0)">{{bord[2][0]}}</td>
+        <td (click)="processPlay(2, 1)">{{bord[2][1]}}</td>
+        <td (click)="processPlay(2, 2)">{{bord[2][2]}}</td>
+    </tr>
 </table>
 <p><button>Reiniciar Partida</button></p>
