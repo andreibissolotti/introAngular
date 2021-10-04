@@ -11,8 +11,13 @@ app-tic-tac-toe td {
     height: 1.5em;
     text-align: center;
     vertical-align: middle;
+    cursor: default;
 }
 
 app-tic-tac-toe td:empty:hover {
     background-color: gray;
+}
+
+app-tic-tac-toe td:empty {
+    cursor: pointer;
 }
